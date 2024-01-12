@@ -1,5 +1,15 @@
 import pandas as pd
 
+inventory = pd.read_excel('ExcelbaseDrivesStreamlit.xlsx', sheet_name='balance')
+
+supply = pd.read_excel('ExcelbaseDrivesStreamlit.xlsx', sheet_name='supply')
+
+supplynonopec = pd.read_excel('ExcelbaseDrivesStreamlit.xlsx', sheet_name='supply')
+
+demandoecd = pd.read_excel('ExcelbaseDrivesStreamlit.xlsx', sheet_name='consump change non ocde')
+
+demandnonoecd = pd.read_excel('ExcelbaseDrivesStreamlit.xlsx', sheet_name='consump change non ocde')
+
 variables = pd.DataFrame({
     'Nome' : [
         'Saudi Production Change',
