@@ -51,9 +51,10 @@ with st.container():
         )
     )
 
+    st.text('O aumento nos reservatórios de petróleo sussurra prenúncios de um amanhã mais caro, enquanto o esvaziar dos tanques muitas vezes preludeia um custo mais módico')
     fig.update_layout(
         title=dict(
-            text='O aumento nos reservatórios de petróleo sussurra prenúncios de um amanhã mais caro, enquanto o esvaziar dos tanques muitas vezes preludeia um custo mais módico',
+            text='',
             font=dict(
                 size=14  # Ajustando o tamanho da fonte do título para 14
             )
@@ -107,9 +108,11 @@ with tab1:
         fig.add_trace(go.Scatter(x=supply['date'], y=supply['WTI Production Change'], name='WTI Production', line_color='rgb(255, 82, 22)'))
 
         # Update layout
+        st.text('Quando a Arábia Saudita ajusta suas fontes de petróleo, o mundo observa: ')
+        st.text('cada movimento lá é um prenúncio para os preços globais do ouro negro')
         fig.update_layout(
             title=dict(
-                text='Quando a Arábia Saudita ajusta suas fontes de petróleo, o mundo observa: cada movimento lá é um prenúncio para os preços globais do ouro negro',
+                text='',
                 font=dict(
                     size=14  # Ajustando o tamanho da fonte para 14
                 )
@@ -143,9 +146,12 @@ with tab1:
             yaxis='y2'
         ))
 
+        st.text('Movimentos na produção fora da OPEP ecoam pelo mercado,')
+        st.text(' desenhando o futuro dos preços do petróleo')
+
         fig.update_layout(
             title=dict(
-                text='Movimentos na produção fora da OPEP ecoam pelo mercado, desenhando o futuro dos preços do petróleo',
+                text='',
                 font=dict(
                     size=14
                 )
@@ -208,9 +214,11 @@ with tab2:
             line=dict(color='rgb(255, 82, 22)'),
             yaxis='y2'
         ))
+        
+        st.text('Nos países da OCDE, os cifrões ascendem e o consumo desce: uma dança de números que revela uma nova prudência energética')
         fig.update_layout(
             title=dict(
-                text='Nos países da OCDE, os cifrões ascendem e o consumo desce: uma dança de números que revela uma nova prudência energética',
+                text='',
                 font=dict(
                     size=14  # Define o tamanho da fonte do título
                 )
@@ -258,9 +266,11 @@ with tab2:
         ))
 
         # Define o layout para usar um único eixo y para ambas as variáveis
+        
+        st.text('Quando a economia pulsa, o coração do petróleo acelera: cada salto no crescimento econômico bombeia a demanda por energia para novos patamares ')
         fig.update_layout(
             title=dict(
-                text='Quando a economia pulsa, o coração do petróleo acelera: cada salto no crescimento econômico bombeia a demanda por energia para novos patamares',
+                text='',
                 font=dict(
                     size=14  # Ajuste o tamanho da fonte conforme necessário
                 )
