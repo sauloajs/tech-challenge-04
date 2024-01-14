@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 from src.data.ipea_data import df
 
 
+st.set_page_config(layout="wide", page_title='Análise de Monte Carlo', page_icon='📈')
+
 tab1, tab2, tab3, tab4 = st.tabs(['Preço do Petróleo', 'Projeção do Preço do Petróleo', 'Distribuição ao Longo do tempo', 'Distribuição Final'])
 
 # Calculando os retornos logarítmicos dos preços
