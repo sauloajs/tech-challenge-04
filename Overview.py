@@ -85,14 +85,6 @@ with st.container():
     )
 
     st.plotly_chart(fig)
-# Exibe o gráfico
-# fig.show()
-
-# with col2:
-#     st.image('./src/images/prices_products.png')
-    
-# with col3:
-#     st.image('./src/images/markets_interest.png')
     
 tab1, tab2 = st.tabs(['⬆️ - Oferta', '⬇️ - Demanda'])
 
@@ -114,14 +106,13 @@ with tab1:
             title=dict(
                 text='',
                 font=dict(
-                    size=14  # Ajustando o tamanho da fonte para 14
+                    size=14 
                 )
             ),
             xaxis_title='Data',
             yaxis_title='Production change'
         )
-        # Show figure
-        # fig.show()
+        
         st.plotly_chart(fig)
 
     
@@ -215,7 +206,8 @@ with tab2:
             yaxis='y2'
         ))
         
-        st.text('Nos países da OCDE, os cifrões ascendem e o consumo desce: uma dança de números que revela uma nova prudência energética')
+        st.text('Nos países da OCDE, os cifrões ascendem e o consumo desce: uma dança de números')
+        st.text(' que revela uma nova prudência energética')
         fig.update_layout(
             title=dict(
                 text='',
@@ -267,7 +259,8 @@ with tab2:
 
         # Define o layout para usar um único eixo y para ambas as variáveis
         
-        st.text('Quando a economia pulsa, o coração do petróleo acelera: cada salto no crescimento econômico bombeia a demanda por energia para novos patamares ')
+        st.text('Quando a economia pulsa, o coração do petróleo acelera: cada salto no ')
+        st.text('crescimento econômico bombeia a demanda por energia para novos patamares ')
         fig.update_layout(
             title=dict(
                 text='',
