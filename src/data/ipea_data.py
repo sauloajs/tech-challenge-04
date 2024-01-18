@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 # URL da página com os dados
-url = "http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view"
+url = "https://web.archive.org/web/20231120130153/http://www.ipeadata.gov.br/ExibeSerie.aspx?module=m&serid=1650971490&oper=view"
 
 # Fazer a requisição para obter o conteúdo da página
 page = requests.get(url)

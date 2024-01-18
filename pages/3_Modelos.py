@@ -23,7 +23,7 @@ with tab1:
 with tab2:
     st.title('OLS (Ordinary Least Squares)')
     
-    st.image('./src/images/ols.png')
+    st.image('./src/images/ols2.png')
     
 with tab3:
     st.title('MLP (Multilayer Perceptron)')

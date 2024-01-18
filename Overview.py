@@ -51,7 +51,7 @@ with st.container():
         )
     )
 
-    st.text('O aumento nos reservatórios de petróleo sussurra prenúncios de um amanhã mais caro, enquanto o esvaziar dos tanques muitas vezes preludeia um custo mais módico')
+    st.write('O aumento nos reservatórios de petróleo sussurra prenúncios de um amanhã mais caro, enquanto o esvaziar dos tanques muitas vezes preludeia um custo mais módico')
     fig.update_layout(
         title=dict(
             text='',
@@ -100,8 +100,8 @@ with tab1:
         fig.add_trace(go.Scatter(x=supply['date'], y=supply['WTI Production Change'], name='WTI Production', line_color='rgb(255, 82, 22)'))
 
         # Update layout
-        st.text('Quando a Arábia Saudita ajusta suas fontes de petróleo, o mundo observa: ')
-        st.text('cada movimento lá é um prenúncio para os preços globais do ouro negro')
+        st.write('Quando a Arábia Saudita ajusta suas fontes de petróleo, o mundo observa: cada movimento lá é um prenúncio para os preços globais do ouro negro')
+        
         fig.update_layout(
             title=dict(
                 text='',
@@ -137,8 +137,7 @@ with tab1:
             yaxis='y2'
         ))
 
-        st.text('Movimentos na produção fora da OPEP ecoam pelo mercado,')
-        st.text(' desenhando o futuro dos preços do petróleo')
+        st.write('Movimentos na produção fora da OPEP ecoam pelo mercado, desenhando o futuro dos preços do petróleo')
 
         fig.update_layout(
             title=dict(
@@ -206,8 +205,7 @@ with tab2:
             yaxis='y2'
         ))
         
-        st.text('Nos países da OCDE, os cifrões ascendem e o consumo desce: uma dança de números')
-        st.text(' que revela uma nova prudência energética')
+        st.write('Nos países da OCDE, os cifrões ascendem e o consumo desce: uma dança de números que revela uma nova prudência energética')
         fig.update_layout(
             title=dict(
                 text='',
@@ -259,8 +257,7 @@ with tab2:
 
         # Define o layout para usar um único eixo y para ambas as variáveis
         
-        st.text('Quando a economia pulsa, o coração do petróleo acelera: cada salto no ')
-        st.text('crescimento econômico bombeia a demanda por energia para novos patamares ')
+        st.write('Quando a economia pulsa, o coração do petróleo acelera: cada salto no crescimento econômico bombeia a demanda por energia para novos patamares')
         fig.update_layout(
             title=dict(
                 text='',
